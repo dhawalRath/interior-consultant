@@ -1,0 +1,371 @@
+/*
+code by - Dhawal (@dhawalRath)
+Date - 29th April 2021 
+*/
+html {
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background-color: #181719;
+  color: white;
+}
+
+.nav-container {
+  width: 100%;
+  height: 4rem;
+}
+
+.nav-container .navbar {
+  max-width: 80.5rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-container .navbar .logo {
+  font-family: 'Crimson Pro', serif;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  border: 1px solid white;
+  padding: 0.5rem;
+}
+
+.nav-container .navbar .openBtn {
+  display: none;
+  border: none;
+  background-color: #181719;
+  color: #f2f2f2;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+@media (max-width: 500px) {
+  .nav-container .navbar .openBtn {
+    display: block;
+  }
+}
+
+.nav-container .navbar .nav-links {
+  width: 37%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .nav-container .navbar .nav-links {
+    width: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-container .navbar .nav-links {
+    display: none;
+  }
+}
+
+.nav-container .navbar .nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.nav-container .navbar .nav-links li a:hover {
+  font-weight: 700;
+}
+
+.nav-container .navbar .nav-links li .active {
+  font-weight: 700;
+  border-bottom: 3px solid white;
+  padding-bottom: 0.5rem;
+}
+
+.bg-modal {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: #181719;
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+}
+
+.bg-modal .closeBtn {
+  display: block;
+  float: right;
+  border: none;
+  background-color: #181719;
+  color: #f2f2f2;
+  cursor: pointer;
+  padding: 1.25rem;
+}
+
+.bg-modal .mobile-nav-links {
+  width: 100%;
+  height: 70%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bg-modal .mobile-nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.bg-modal .mobile-nav-links li a:hover {
+  font-weight: 700;
+}
+
+.bg-modal .mobile-nav-links li .active {
+  font-weight: 700;
+  border-bottom: 3px solid white;
+  padding-bottom: 0.5rem;
+}
+
+.showcase-container {
+  width: 100%;
+}
+
+.showcase-container .showcase {
+  max-width: 80.5rem;
+  margin: 0 auto;
+  padding: 0 0.75rem;
+}
+
+@media (min-width: 1000px) {
+  .showcase-container .showcase {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.showcase-container .showcase .content-box .title {
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-size: 2.25rem;
+  margin-top: 1.25rem;
+}
+
+@media (min-width: 750px) {
+  .showcase-container .showcase .content-box .title {
+    font-size: 3rem;
+  }
+}
+
+.showcase-container .showcase .content-box .para {
+  font-size: 0.875rem;
+  margin: 1rem 0;
+  width: 65%;
+}
+
+@media (min-width: 750px) {
+  .showcase-container .showcase .content-box .para {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+  }
+}
+
+.showcase-container .showcase .content-box a {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}
+
+.showcase-container .showcase .content-box a:hover {
+  font-weight: 400;
+}
+
+@media (min-width: 750px) {
+  .showcase-container .showcase .content-box a {
+    font-size: 1.125rem;
+  }
+}
+
+.showcase-container .showcase .content-box a .fas {
+  padding-left: 0.625rem;
+}
+
+.showcase-container .showcase .img-box {
+  position: relative;
+}
+
+.showcase-container .showcase .img-box .design-pic {
+  width: 100%;
+  margin-top: 1.875rem;
+}
+
+.showcase-container .showcase .img-box .card {
+  background-color: #181719;
+  position: absolute;
+  left: 10%;
+  top: 80%;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 750px) {
+  .showcase-container .showcase .img-box .card {
+    left: 40%;
+    top: 86%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .showcase-container .showcase .img-box .card {
+    top: 85%;
+    left: 30%;
+  }
+}
+
+.showcase-container .showcase .img-box .card .chip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.8125rem 0 1.125rem 1.1875rem;
+  width: 60%;
+}
+
+@media (min-width: 750px) {
+  .showcase-container .showcase .img-box .card .chip {
+    padding: 1.125rem 0 1.5625rem 1.5625rem;
+    width: 80%;
+  }
+}
+
+.showcase-container .showcase .img-box .card .chip .profile-pic {
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+}
+
+@media (min-width: 750px) {
+  .showcase-container .showcase .img-box .card .chip .profile-pic {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+}
+
+.showcase-container .showcase .img-box .card .chip .name {
+  font-weight: 500;
+  padding-left: 0.875rem;
+}
+
+@media (min-width: 750px) {
+  .showcase-container .showcase .img-box .card .chip .name {
+    padding-left: 1rem;
+  }
+}
+
+.showcase-container .showcase .img-box .card .chip .name :first-child {
+  font-size: 0.75rem;
+}
+
+@media (min-width: 750px) {
+  .showcase-container .showcase .img-box .card .chip .name :first-child {
+    font-size: 0.875rem;
+  }
+}
+
+.showcase-container .showcase .img-box .card .chip .name :last-child {
+  font-size: 0.625rem;
+  color: #828282;
+}
+
+@media (min-width: 750px) {
+  .showcase-container .showcase .img-box .card .chip .name :last-child {
+    font-size: 0.75rem;
+  }
+}
+
+.showcase-container .showcase .img-box .card .design-para {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  padding-left: 1.1875rem;
+  width: 60%;
+}
+
+@media (min-width: 750px) {
+  .showcase-container .showcase .img-box .card .design-para {
+    font-size: 1.5rem;
+    width: 70%;
+    padding-bottom: 2rem;
+  }
+}
+
+.footer {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  margin-bottom: 24px;
+  color: gray;
+  text-align: center;
+  margin-top: 8rem;
+}
+
+@media (min-width: 750px) {
+  .footer {
+    margin-top: 12rem;
+  }
+}
+
+.footer a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.footer a :first-child {
+  font-weight: 700;
+}
+
+.footer a :last-child {
+  font-weight: 500;
+}
+/*# sourceMappingURL=main.css.map */
