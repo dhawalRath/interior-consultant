@@ -14,6 +14,7 @@ This application/site was created as a submission to a [DevChallenges](https://d
 - HTML5 Semantics
 - CSS3 (with Grid and Flexbox)
 - SCSS
+- JavaScript (for Mobile-menu)
 
 ## :man: Author
 
