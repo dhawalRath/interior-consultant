@@ -1,4 +1,5 @@
-# :star2: devChallenges - Interior Consultant landing page :star2:
+# :star2: devChallenges - Interior Consultant :star2:
+
 Solution for a challenge from [Devchallenges.io](https://devchallenges.io). </br>
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb) was to build an application to complete the given user stories.
 
@@ -6,7 +7,7 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## :camera: Overview
 
-![desktop](./screenshots/desktop.png)
+![ss](./ss.png)
 
 ## :muscle: Built With
 
