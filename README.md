@@ -18,5 +18,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## :man: Author
 
-- GitHub [@dhawalRath](https://{github.com/dhawalRath})
+- devChallenges [@dhawalRath](https://devchallenges.io/portfolio/dhawalRath)
 - Twitter [@dhawalRath](https://{twitter.com/dhawalRath})
